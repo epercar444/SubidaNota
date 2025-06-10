@@ -90,8 +90,5 @@ public class Instituto {
 				}
 			}
 		}
-	public void salirPrograma () {
-		System.out.println("Saliendo del programa");
-	}
 }
 
