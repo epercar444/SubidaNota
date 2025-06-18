@@ -3,10 +3,6 @@ package NttExamen;
 import java.time.LocalDate;
 import java.util.List;
 
-import excepciones.EnvioException;
-import modelos.CentroDistribucion;
-import modelos.Envio;
-import repositorios.RepositorioEnvios;
 
 public class GestionaEnvios {
 	public static void main(String[] args) throws EnvioException {
@@ -58,5 +54,6 @@ public class GestionaEnvios {
 		/******************************************************************
 		 * A partir de este bloque puedes añadir tus posibles pruebas
 		 ***************************************************************** */
+		repo.agregarCentroDistribucion("PK001", LocalDate.of(2025, 5, 22), destino);
 	}
 }

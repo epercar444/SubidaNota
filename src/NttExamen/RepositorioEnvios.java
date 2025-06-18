@@ -20,6 +20,7 @@ public class RepositorioEnvios {
 			this.envios.put(e, new HashSet<CentroDistribucion>());
 		}
 		this.envios.get(e).add(centro);
+		System.out.println("Estoy añadiendo algo");
 	}
 
 	// TODO: buscarEnvio
@@ -37,7 +38,7 @@ public class RepositorioEnvios {
 
 	// TODO: filtrarEnviosPorCentro
 	public List<Envio> filtrarEnviosPorCentro(String codigoCentro) {
-		List<Envio> envio = new ArrayList<Envio>();
+		/*List<Envio> envio = new ArrayList<Envio>();
 		Set<Map.Entry <Envio, HashSet<CentroDistribucion>>> entradas = envios.entrySet();
 		Entry<Envio, HashSet<CentroDistribucion>> elemento;
 		Iterator it = entradas.iterator();
@@ -46,7 +47,7 @@ public class RepositorioEnvios {
 			if (elemento.getValue() >= 5) {
 				alumnos.add(elemento.getKey());
 			}
-		}
+		}*/
 		return new ArrayList<>();
 	}
 

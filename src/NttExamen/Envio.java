@@ -3,7 +3,6 @@ package NttExamen;
 import java.time.LocalDate;
 import java.util.Objects;
 
-import modelos.EstadoEnvio;
 
 public class Envio {
 	private LocalDate fechaEnvio;
