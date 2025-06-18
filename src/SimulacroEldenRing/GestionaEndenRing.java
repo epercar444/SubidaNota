@@ -7,7 +7,7 @@ import java.util.TreeSet;
 
 public class GestionaEndenRing {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws EldenExcepcion {
 		Set <Sinluz> sinluz = new TreeSet<Sinluz>();
 		Sinluz ardyn = new Sinluz("Ardyn");
 		Sinluz selene = new Sinluz("Selene");
@@ -28,6 +28,7 @@ public class GestionaEndenRing {
 		System.out.println(selene.getId());
 		
 		RepositorioSinLuz f = new RepositorioSinLuz();
+		System.out.println(f.getSinLuz(2));
 		/*System.out.println(kael.toString());
 		System.out.println(selene.toString());
 		System.out.println(ardyn.toString());	
